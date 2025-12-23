@@ -30,7 +30,7 @@
                         <td>@shipping.Description</td>
 
                         <td>
-                            <a class="btn btn-warning">Update</a>
+                            <a class="btn btn-warning" asp-action="Update" asp-route-id="@shipping.Id">Update</a>
                             <a asp-action="Delete" asp-route-id="@shipping.Id" class="btn btn-danger">Delete</a>
                         </td>
                     </tr>

@@ -34,7 +34,39 @@ public class ShippingController(AppDbContext _context) : Controller
         }
         _context.Shippings.Remove(shipping);
         _context.SaveChanges();
-        return RedirectToAction("Index");
+        return RedirectToAction(nameof(Index));
+    }
+    public IActionResult Update(int id)
+    {
+        var shipping =  _context.Sliders.Find(id);
+        if(shipping is null)
+        {
+            return NotFound();
+        }
+
+        return View(shipping);
+    }
+    [HttpPost]
+    public IActionResult Update(Shipping shipping)
+    {
+        if(!ModelState.IsValid)
+        {
+            return View();
+        }
+
+
+        var existShipping = _context.Shippings.Find(shipping.Id);
+        if(existShipping is null)
+        {
+            return NotFound();
+        }
+        existShipping.ImageUrl = shipping.ImageUrl;
+        existShipping.Title = shipping.Title;
+        existShipping.Description = shipping.Description;
+
+        _context.Shippings.Update(existShipping);
+        _context.SaveChanges();
+        return RedirectToAction(nameof(Index));
     }
  }
 
