@@ -3,68 +3,92 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|c:\\users\\lenovo\\source\\repos\\mvcproniatask\\areas\\admin\\views\\shipping\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:areas\\admin\\views\\shipping\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|c:\\users\\lenovo\\source\\repos\\mvcproniatask\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|c:\\users\\lenovo\\source\\repos\\mvcproniatask\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|c:\\users\\lenovo\\source\\repos\\mvcproniatask\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|c:\\users\\lenovo\\source\\repos\\mvcproniatask\\areas\\admin\\controllers\\shippingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:areas\\admin\\controllers\\shippingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|c:\\users\\lenovo\\source\\repos\\mvcproniatask\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|c:\\users\\lenovo\\source\\repos\\mvcproniatask\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\models\\shipping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:models\\shipping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|c:\\users\\lenovo\\source\\repos\\mvcproniatask\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|c:\\users\\lenovo\\source\\repos\\mvcproniatask\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Migrations\\20251222211308_AddedShippings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:Migrations\\20251222211308_AddedShippings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Migrations\\20251222202928_AddSliders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:Migrations\\20251222202928_AddSliders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|c:\\users\\lenovo\\source\\repos\\mvcproniatask\\areas\\admin\\views\\shipping\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:areas\\admin\\views\\shipping\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|c:\\users\\lenovo\\source\\repos\\mvcproniatask\\views\\home\\createshipping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:views\\home\\createshipping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|c:\\users\\lenovo\\source\\repos\\mvcproniatask\\areas\\admin\\views\\shipping\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:areas\\admin\\views\\shipping\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\areas\\admin\\controllers\\shippingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:areas\\admin\\controllers\\shippingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|c:\\users\\lenovo\\source\\repos\\mvcproniatask\\migrations\\20251223075409_addedshipping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:migrations\\20251223075409_addedshipping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Migrations\\20251222201207_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:Migrations\\20251222201207_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,20 +115,8 @@
       "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Migrations\\20251222211308_AddedShippings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:Migrations\\20251222211308_AddedShippings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Migrations\\20251222202928_AddSliders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:Migrations\\20251222202928_AddSliders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Migrations\\20251222202622_AddedSliders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:Migrations\\20251222202622_AddedSliders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Migrations\\20251222201207_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC41A40B-812E-4F98-83DF-80807379AD8C}|MVCProniaTask.csproj|solutionrelative:Migrations\\20251222201207_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -114,7 +126,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -122,33 +134,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
+              "Title": "20251223075409_AddedShipping.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Migrations\\20251223075409_AddedShipping.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251223075409_AddedShipping.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Migrations\\20251223075409_AddedShipping.cs",
+              "RelativeToolTip": "Migrations\\20251223075409_AddedShipping.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T07:54:11.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Areas\\Admin\\Views\\Shipping\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shipping\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Areas\\Admin\\Views\\Shipping\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shipping\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-23T07:19:26.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateShipping.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Views\\Home\\CreateShipping.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\CreateShipping.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Views\\Home\\CreateShipping.cshtml",
+              "RelativeToolTip": "Views\\Home\\CreateShipping.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-23T06:46:40.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Areas\\Admin\\Views\\Shipping\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shipping\\Index.cshtml",
               "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Areas\\Admin\\Views\\Shipping\\Index.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Shipping\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAARAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACEAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-23T00:00:39.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "ShippingController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Areas\\Admin\\Controllers\\ShippingController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ShippingController.cs",
               "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Areas\\Admin\\Controllers\\ShippingController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\ShippingController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA8wBcAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-22T23:58:42.304Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Areas\\Admin\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewImports.cshtml",
@@ -161,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Areas\\Admin\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewStart.cshtml",
@@ -174,20 +225,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
               "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "ViewState": "AQIAAPwCAAAAAAAAAAArwA0DAAAAAAAA",
+              "ViewState": "AQIAAHICAAAAAAAAAAArwA0DAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-22T23:47:19.313Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
@@ -200,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Areas\\Admin\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\DashboardController.cs",
@@ -213,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
@@ -226,19 +277,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 2,
               "Title": "20251222211308_AddedShippings.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Migrations\\20251222211308_AddedShippings.cs",
               "RelativeDocumentMoniker": "Migrations\\20251222211308_AddedShippings.cs",
               "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Migrations\\20251222211308_AddedShippings.cs",
               "RelativeToolTip": "Migrations\\20251222211308_AddedShippings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T21:13:09.979Z"
+              "WhenOpened": "2025-12-22T21:13:09.979Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 1,
               "Title": "HomeViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\ViewModels\\HomeViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\HomeViewModel.cs",
@@ -246,24 +298,25 @@
               "RelativeToolTip": "ViewModels\\HomeViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T21:02:11.279Z"
+              "WhenOpened": "2025-12-22T21:02:11.279Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "Shipping.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Models\\Shipping.cs",
               "RelativeDocumentMoniker": "Models\\Shipping.cs",
               "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Models\\Shipping.cs",
               "RelativeToolTip": "Models\\Shipping.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAsAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-22T20:57:45.114Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 6,
               "Title": "20251222202928_AddSliders.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Migrations\\20251222202928_AddSliders.cs",
               "RelativeDocumentMoniker": "Migrations\\20251222202928_AddSliders.cs",
@@ -271,11 +324,12 @@
               "RelativeToolTip": "Migrations\\20251222202928_AddSliders.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T20:29:29.029Z"
+              "WhenOpened": "2025-12-22T20:29:29.029Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "20251222202622_AddedSliders.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Migrations\\20251222202622_AddedSliders.cs",
               "RelativeDocumentMoniker": "Migrations\\20251222202622_AddedSliders.cs",
@@ -287,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "GlobalUsings.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\GlobalUsings.cs",
               "RelativeDocumentMoniker": "GlobalUsings.cs",
@@ -299,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 20,
               "Title": "Slider.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Models\\Slider.cs",
               "RelativeDocumentMoniker": "Models\\Slider.cs",
@@ -307,24 +361,24 @@
               "RelativeToolTip": "Models\\Slider.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T20:18:04.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-22T20:18:04.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 15,
               "Title": "20251222201207_Init.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Migrations\\20251222201207_Init.cs",
               "RelativeDocumentMoniker": "Migrations\\20251222201207_Init.cs",
               "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Migrations\\20251222201207_Init.cs",
               "RelativeToolTip": "Migrations\\20251222201207_Init.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T20:12:08.759Z"
+              "WhenOpened": "2025-12-22T20:12:08.759Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -336,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Contexts\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Contexts\\AppDbContext.cs",
@@ -348,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -360,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Views\\Blog\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Blog\\Index.cshtml",
@@ -368,11 +422,12 @@
               "RelativeToolTip": "Views\\Blog\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-22T19:49:43.385Z"
+              "WhenOpened": "2025-12-22T19:49:43.385Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "BlogController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Controllers\\BlogController.cs",
               "RelativeDocumentMoniker": "Controllers\\BlogController.cs",
@@ -384,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
@@ -396,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -408,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -421,19 +476,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAOAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwCAAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T19:20:44.137Z"
+              "WhenOpened": "2025-12-22T19:20:44.137Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\MVCProniaTask\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -441,8 +497,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T19:18:10.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-22T19:18:10.162Z"
             }
           ]
         }

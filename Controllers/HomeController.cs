@@ -22,5 +22,17 @@ namespace MVCProniaTask.Controllers
             };
            return View(vm);
         }
+        public IActionResult  CreateShipping()
+        {
+            return View();
+        }
+        public IActionResult CreateNewShipping(Shipping shipping)
+        {
+           
+            _dbContext.Shippings.Add(shipping);
+            _dbContext.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
     }
 }

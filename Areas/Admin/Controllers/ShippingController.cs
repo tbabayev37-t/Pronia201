@@ -10,5 +10,31 @@ public class ShippingController(AppDbContext _context) : Controller
           var shipping =   _context.Shippings.ToList();
             return View(shipping);
         }
+    [HttpGet]
+        public IActionResult Create()
+    {
+        return View();
     }
+    [HttpPost]
+       public IActionResult Create(Shipping shipping)
+    {
+
+        _context.Shippings.Add(shipping);
+        _context.SaveChanges();
+        return RedirectToAction(nameof(Index));
+    }
+
+    public IActionResult Delete(int id)
+    {
+        var shipping = _context.Shippings.Find(id);
+
+        if( shipping == null)
+        {
+            return NotFound();
+        }
+        _context.Shippings.Remove(shipping);
+        _context.SaveChanges();
+        return RedirectToAction("Index");
+    }
+ }
 
