@@ -1,0 +1,39 @@
+﻿@model List<Shipping>
+<div class="container">
+    <div class="row">   
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">ImageUrl</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+
+                    <th scope="col">Actions</th>
+                  
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var shipping in Model)
+                {
+                    <tr>
+                        <th scope="row">@shipping.Id</th>
+                        <td>
+                            <img src="~/assets/images/shipping/@shipping.ImageUrl"
+                                 width="30" height="30" />
+                        </td>
+                        <td>@shipping.Title</td>
+                        <td>@shipping.Description</td>
+
+                        <td>
+                            <a class="btn btn-warning">Update</a>
+                            <a class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+</div>
+
+</div>
