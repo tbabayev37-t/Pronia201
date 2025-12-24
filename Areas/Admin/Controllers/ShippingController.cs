@@ -69,4 +69,3 @@ public class ShippingController(AppDbContext _context) : Controller
         return RedirectToAction(nameof(Index));
     }
  }
-

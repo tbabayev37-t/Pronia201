@@ -1,11 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using MVCProniaTask.Models.Command;
+using System.ComponentModel.DataAnnotations;
 
 namespace MVCProniaTask.Models
 {
-    public class Shipping
+    public class Shipping:BaseEntity
     {
-        
-        public int Id { get; set; }
         [Required]
         [MaxLength(512), MinLength(3)]
         public string ImageUrl { get; set; }

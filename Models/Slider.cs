@@ -1,8 +1,9 @@
-﻿namespace MVCProniaTask.Models
+﻿using MVCProniaTask.Models.Command;
+
+namespace MVCProniaTask.Models
 {
-    public class Slider
+    public class Slider:BaseEntity
     {
-        public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string ImageUrl { get; set; }
