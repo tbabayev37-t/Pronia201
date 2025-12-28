@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MVCProniaTask.Models
 {
@@ -6,13 +7,15 @@ namespace MVCProniaTask.Models
     {
         
         public int Id { get; set; }
-        [Required]
+       
         [MaxLength(512), MinLength(3)]
-        public string ImageUrl { get; set; }
+        public string? ImageUrl { get; set; }
+        [NotMapped]
+        public IFormFile Image {  get; set; }
         
         [MaxLength(100)]
         [Required]
         public string Title { get; set; }
-        public string Description { get; set; }
+        public string? Description { get; set; }
     }
 }

@@ -1,0 +1,46 @@
+﻿@model List<MVCProniaTask.Models.Product>
+<div class="container">
+    <div class="row">
+        <h2>Products</h2>
+        <div class="row">
+            <a class="btn btn-success col-2" asp-action="Create">Create</a>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">MainImage</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th>Category Name</th>
+
+                    <th scope="col">Actions</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <th scope="row">@product.Id</th>
+                        <td>
+                            <img src="~/assets/images/website-images/@product.MainImage"
+                                 width="30" height="30" />
+                        </td>
+                        <td>@product.Name</td>
+                        <td>@product.Price</td>
+                        <td>@product.Category.Name</td>
+
+                        <td>
+                            <a class="btn btn-warning" asp-action="Update" asp-route-id="@product.Id">Update</a>
+                            <a asp-action="Delete" asp-route-id="@product.Id" class="btn btn-danger deleteBtn">Delete</a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+
+</div>

@@ -1,4 +1,6 @@
-﻿namespace MVCProniaTask.Models
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace MVCProniaTask.Models
 {
     public class Slider
     {
@@ -6,6 +8,7 @@
         public string Title { get; set; }
         public string Description { get; set; }
         public string ImageUrl { get; set; }
-        public decimal DiscountPercentage {  get; set; }
+        [Precision(10, 2)]
+        public decimal DiscountPercentage { get; set; }
     }
 }

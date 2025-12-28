@@ -23,15 +23,16 @@
                     <tr>
                         <th scope="row">@shipping.Id</th>
                         <td>
-                            <img src="~/assets/images/shipping/@shipping.ImageUrl"
-                                 width="30" height="30" />
+                            <img src="~/assets/images/website-images/@shipping.ImageUrl"
+                                 width="30" height="40" />
+
                         </td>
                         <td>@shipping.Title</td>
                         <td>@shipping.Description</td>
 
                         <td>
                             <a class="btn btn-warning" asp-action="Update" asp-route-id="@shipping.Id">Update</a>
-                            <a asp-action="Delete" asp-route-id="@shipping.Id" class="btn btn-danger">Delete</a>
+                            <a asp-action="Delete" asp-route-id="@shipping.Id" class="btn btn-danger deleteBtn">Delete</a>
                         </td>
                     </tr>
                 }
