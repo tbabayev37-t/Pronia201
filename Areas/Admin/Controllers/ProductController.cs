@@ -12,9 +12,20 @@ public class ProductController(AppDbContext _context, IWebHostEnvironment _envir
 {
     public IActionResult Index()
     {
-        var products = _context.Products.Include(x => x.Category).ToList();
+       List<ProductGetVM> vms = _context.Products.Include(x => x.Category).Select(x=>new ProductGetVM()
+        {
+            Id = x.Id,
+            Name = x.Name,
+            Description = x.Description,
+            CategoryName = x.Category.Name,
+            HoverImage = x.HoverImage,
+            Price = x.Price,
+            SKU = x.SKU,
+            MainImage = x.MainImage
 
-        return View(products);
+        }).ToList();
+
+        return View(vms);
     }
     [HttpGet]
     public IActionResult Create()
@@ -115,7 +126,7 @@ public class ProductController(AppDbContext _context, IWebHostEnvironment _envir
     }
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public IActionResult Update(Product product)
+    public IActionResult Update(ProductUpdateVM product)
     {
 
         if (!ModelState.IsValid)
@@ -136,13 +147,61 @@ public class ProductController(AppDbContext _context, IWebHostEnvironment _envir
             return View(product);
         }
 
+        if (!product.MainImage?.CheckType("image") ?? false)
+        {
+            ModelState.AddModelError("MainImage1", "Yalniz sekil formatinda data daxil edin");
+            return View(product);
+        }
+        if (!product.MainImage?.CheckSize(2)??false)
+        {
+            ModelState.AddModelError("MainImage1", "Max 2mb hecminde sekil yukleye bilersiniz");
+            return View(product);
+        }
+
+        if (!product.HoverImage?.CheckType("image")??false)
+        {
+            ModelState.AddModelError("HoverImage2", "Yalniz sekil formatinda data daxil edin");
+            return View(product);
+        }
+        if (!product.HoverImage?.CheckSize(2)??false)
+        {
+            ModelState.AddModelError("HoverImage2", "Max 2mb hecminde sekil yukleye bilersiniz");
+            return View(product);
+        }
+        
+
+        if (!isExistCategory)
+        {
+            ModelState.AddModelError("", "Bu kategoriya movcud deyil!");
+            SendCategoriesWithViewBag();
+            return View(product);
+        }
+
         existProduct.Name = product.Name;
         existProduct.Description = product.Description;
         existProduct.SKU = product.SKU;
         existProduct.CategoryId = product.CategoryId;
         existProduct.Price = product.Price;
-        existProduct.MainImage = product.MainImage;
-        existProduct.HoverImage = product.HoverImage;
+        /* existProduct.MainImage = product.MainImage;
+         existProduct.HoverImage = product.HoverImage;*/
+        string folderpath = Path.Combine(_environment.WebRootPath, "assets", "images", "website-images");
+
+        if (product.MainImage is { })
+        {
+            string newMainImageName = product.MainImage.SaveFile(folderpath);
+            if (System.IO.File.Exists(Path.Combine(folderpath, existProduct.MainImage)))
+                System.IO.File.Delete(Path.Combine(folderpath, existProduct.MainImage));
+
+            existProduct.MainImage = newMainImageName;
+        }
+        if(product.HoverImage is { })
+        {
+            string newHoverImageName = product.HoverImage.SaveFile(folderpath);
+            if (System.IO.File.Exists(Path.Combine(folderpath, existProduct.HoverImage)))
+                System.IO.File.Delete(Path.Combine(folderpath, existProduct.HoverImage));
+
+            existProduct.HoverImage = newHoverImageName;
+        }
 
         _context.Products.Update(existProduct);
         _context.SaveChanges();

@@ -1,8 +1,8 @@
-﻿@model Product
+﻿@model ProductUpdateVM
 <div class="container">
     <div class="row">
         <h2>Update Product</h2>
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             <div class="text-danger" asp-validation-summary="All"></div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Name</label>
