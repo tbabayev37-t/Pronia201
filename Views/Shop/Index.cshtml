@@ -298,11 +298,17 @@
                                                 </div>
                                                 <div class="rating-box">
                                                     <ul>
-                                                        <li><i class="fa fa-star"></i></li>
-                                                        <li><i class="fa fa-star"></i></li>
-                                                        <li><i class="fa fa-star"></i></li>
-                                                        <li><i class="fa fa-star"></i></li>
-                                                        <li><i class="fa fa-star"></i></li>
+                                                        @for (int i = 1; i <= 5; i++)
+                                                        {
+                                                            if (i <= Math.Round(product.Rating))
+                                                            {
+                                                                <li><i class="fa fa-star"></i></li>
+                                                            }
+                                                            else
+                                                            {
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                            }
+                                                        }
                                                     </ul>
                                                 </div>
                                             </div>

@@ -20,5 +20,7 @@ namespace MVCProniaTask.Models
         public string MainImage { get; set; }
         [Required]
         public string HoverImage { get; set; }
+        [Range(0, 5)]
+        public double Rating { get; set; } 
     }
 }

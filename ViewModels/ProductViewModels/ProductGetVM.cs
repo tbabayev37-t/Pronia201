@@ -1,4 +1,6 @@
-﻿public class ProductGetVM()
+﻿using System.ComponentModel.DataAnnotations;
+
+public class ProductGetVM()
 {
     public int Id { get; set; }
     public string Name { get; set; }
@@ -8,5 +10,7 @@
     public string CategoryName { get; set; }
     public string MainImage { get; set; }
     public string HoverImage { get; set; }
+    [Range(0, 5)]
+    public double Rating { get; set; } = 3;
 
 }
