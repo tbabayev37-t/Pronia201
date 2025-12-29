@@ -1,4 +1,6 @@
-﻿@model List<MVCProniaTask.Models.Product>
+﻿@using MVCProniaTask.ViewModels.ProductViewModels
+@model List<ProductGetVM>
+
 <div class="container">
     <div class="row">
         <h2>Products</h2>
@@ -30,7 +32,7 @@
                         </td>
                         <td>@product.Name</td>
                         <td>@product.Price</td>
-                        <td>@product.Category.Name</td>
+                        <td>@product.CategoryName</td>
 
                         <td>
                             <a class="btn btn-warning" asp-action="Update" asp-route-id="@product.Id">Update</a>
