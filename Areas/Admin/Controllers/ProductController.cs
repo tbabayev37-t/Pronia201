@@ -226,6 +226,27 @@ public class ProductController(AppDbContext _context, IWebHostEnvironment _envir
         return RedirectToAction(nameof(Index));
 
     }
+    public IActionResult Detail(int id)
+    {
+        var product = _context.Products.Select(x=>new ProductGetVM()
+        {
+            Id=x.Id,
+            CategoryName=x.Category.Name,
+            Description=x.Description,
+            Name=x.Name,
+            HoverImage=x.HoverImage,
+            MainImage=x.MainImage,
+            Price=x.Price,
+            SKU=x.SKU,
+            TagNames=x.ProductTags.Select(x=>x.Tag.name).ToList()
+            
+        }).FirstOrDefault(x=>x.Id == id);
+        if(product is null)
+        {
+            return NotFound();
+        }
+        return View(product);
+    }
     private void SendCategoriesWithViewBag(AppDbContext _context)
     {
         var categories = _context.Categories.ToList();

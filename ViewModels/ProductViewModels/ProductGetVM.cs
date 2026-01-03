@@ -12,5 +12,6 @@ public class ProductGetVM()
     public string HoverImage { get; set; }
     [Range(0, 5)]
     public double Rating { get; set; } = 3;
+    public List<string> TagNames { get; set; }
 
 }

@@ -21,6 +21,7 @@ namespace MVCProniaTask.Models
         [Required]
         public string HoverImage { get; set; }
         [Range(0, 5)]
-        public double Rating { get; set; } 
+        public double Rating { get; set; }
+        public ICollection<ProductTag> ProductTags { get; set; } = [];
     }
 }

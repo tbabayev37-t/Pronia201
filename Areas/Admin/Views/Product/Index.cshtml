@@ -35,6 +35,7 @@
                         <td>@product.CategoryName</td>
 
                         <td>
+                            <a class="btn btn-primary" asp-action="Detail" asp-route-id="@product.Id">Deatil</a>
                             <a class="btn btn-warning" asp-action="Update" asp-route-id="@product.Id">Update</a>
                             <a asp-action="Delete" asp-route-id="@product.Id" class="btn btn-danger deleteBtn">Delete</a>
                         </td>
