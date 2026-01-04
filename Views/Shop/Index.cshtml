@@ -242,7 +242,7 @@
                                     <div class="col-md-4 col-sm-6">
                                         <div class="product-item">
                                             <div class="product-img">
-                                                <a href="single-product-variable.html">
+                                                <a asp-area="Admin" asp-controller="Product" asp-action="Detail" asp-route-id="@product.Id">
                                                     <img class="primary-img"
                                                          src="~/assets/images/website-images/@product.MainImage"
                                                          alt="Product Images" />
@@ -291,8 +291,8 @@
                                                 </div>
                                             </div>
                                             <div class="product-content">
-                                                <a class="product-name"
-                                                   href="single-product-variable.html">@product.Name</a>
+                                                <a class="product-name" asp-area="Admin" asp-controller="Product" asp-action="Detail"
+                                                   asp-route-id="@product.Id">@product.Name</a>
                                                 <div class="price-box pb-1">
                                                     <span class="new-price">@product.Price</span>
                                                 </div>
@@ -318,6 +318,7 @@
                      
                  
                                 
+
 
                     </div>
                   </div>
