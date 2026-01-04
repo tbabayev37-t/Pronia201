@@ -89,6 +89,22 @@ public class ProductController(AppDbContext _context, IWebHostEnvironment _envir
             MainImage = mainImageUniqueName,
             HoverImage = hoverImageUniqueName
         };
+        product1.ProductImages = new List<ProductImage>();
+        if(product1.ProductImages is not null)
+        {
+            foreach (var image in product.Images)
+            {
+                if (!image.CheckType("image") || !image.CheckSize(2))
+                    continue;
+
+                string imagename = image.SaveFile(folderpath);
+                product1.ProductImages.Add(new ProductImage
+                {
+                    ImageUrl = imagename
+                });
+            }
+           
+        }
         _context.Products.Add(product1);
         _context.SaveChanges();
 
@@ -238,8 +254,9 @@ public class ProductController(AppDbContext _context, IWebHostEnvironment _envir
             MainImage=x.MainImage,
             Price=x.Price,
             SKU=x.SKU,
-            TagNames=x.ProductTags.Select(x=>x.Tag.name).ToList()
-            
+            TagNames=x.ProductTags.Select(x=>x.Tag.name).ToList(),
+            ImageUrls = x.ProductImages.Select(x=>x.ImageUrl).ToList()
+
         }).FirstOrDefault(x=>x.Id == id);
         if(product is null)
         {

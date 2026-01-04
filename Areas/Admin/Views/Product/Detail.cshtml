@@ -1,7 +1,7 @@
 ﻿@model ProductGetVM
 <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="~/admin/assets/images/website-images/@Model.MainImage" alt="Card image cap">
-    <img class="card-img-top" src="~/admin/assets/images/website-images/@Model.HoverImage" alt="Card image cap">
+    <img class="card-img-top" src="~/assets/images/website-images/@Model.MainImage" alt="Card image cap">
+    <img class="card-img-top" src="~/assets/images/website-images/@Model.HoverImage" alt="Card image cap">
     <div class="card-body">
         <p class="card-text">Name: @Model.Name</p>
         <p class="card-text">Description: @Model.Description</p>
@@ -12,5 +12,16 @@
             {
                 <span>@tagname,</span>
             }</p>
+        <h5>Gallery</h5>
+
+        <div class="d-flex flex-wrap gap-2">
+            @foreach (var img in Model.ImageUrls)
+            {
+                <img src="~/assets/images/website-images/@img"
+                     width="120"
+                     style="border:1px solid #ccc; padding:5px;" />
+            }
+        </div>
+
     </div>
 </div>

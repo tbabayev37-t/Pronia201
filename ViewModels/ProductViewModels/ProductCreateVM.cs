@@ -19,5 +19,7 @@ namespace MVCProniaTask.ViewModels.ProductViewModels
         public IFormFile MainImage1 { get; set; }
         [Required]
         public IFormFile HoverImage2 { get; set; }
+        public List<IFormFile>? Images { get; set; }
+
     }
 }

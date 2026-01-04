@@ -13,5 +13,7 @@ public class ProductGetVM()
     [Range(0, 5)]
     public double Rating { get; set; } = 3;
     public List<string> TagNames { get; set; }
+    public List<string> ImageUrls { get; set; }
+
 
 }
