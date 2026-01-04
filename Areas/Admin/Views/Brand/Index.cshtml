@@ -1,0 +1,36 @@
+﻿@model List<Brand>
+<div class="container">
+    <div class="row">
+        <div class="row">
+            <a class="btn btn-success col-2" asp-action="Create">Create</a>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Actions</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var brand in Model)
+                {
+                    <tr>
+                        <th scope="row">@brand.Id</th>
+                        <td>@brand.Name</td>
+
+
+                        <td>
+                            <a class="btn btn-warning" asp-action="Update" asp-route-id="@brand.Id">Update</a>
+                            <a asp-action="Delete" asp-route-id="@brand.Id" class="btn btn-danger deleteBtn">Delete</a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
