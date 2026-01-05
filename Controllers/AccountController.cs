@@ -18,6 +18,18 @@ namespace MVCProniaTask.Controllers
             {
                 return View(vm);
             }
+            var existUser = await _userManager.FindByNameAsync(vm.UserName);
+            if(existUser is { })
+            {
+                ModelState.AddModelError("Username", "This user is already exist");
+                return View(vm);
+            }
+            existUser = await _userManager.FindByEmailAsync(vm.EmailAddress);
+            if(existUser is { })
+            {
+                ModelState.AddModelError("EmailAddress", "This email is already exist");
+                return View(vm);
+            }
             AppUser user = new()
             {
                 FirstName = vm.FirstName,
