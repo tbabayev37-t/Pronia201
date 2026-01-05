@@ -5,7 +5,7 @@ using MVCProniaTask.ViewModels.UserViewModels;
 
 namespace MVCProniaTask.Controllers
 {
-    public class AccountController(UserManager<AppUser> _userManager) : Controller
+    public class AccountController(UserManager<AppUser> _userManager, SignInManager<AppUser> _signInManager) : Controller
     {
         public IActionResult Register()
         {
@@ -47,6 +47,39 @@ namespace MVCProniaTask.Controllers
                 return View(vm);
             }
             return Ok("OK");
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult>  Login(LoginVM vm)
+        {
+            if(!ModelState.IsValid)
+            {
+                return View(vm);
+            }
+            var user = await _userManager.FindByEmailAsync(vm.EmailAddress);
+            if(user is { })
+            {
+                ModelState.AddModelError("", "Email or Password is wrong");
+                return View(vm);
+            }
+            var result = await _userManager.CheckPasswordAsync(user, vm.Password);
+            if(result == false)
+            {
+                ModelState.AddModelError("", "Email or Password is wrong");
+                return View(vm);
+            }
+
+            await _signInManager.SignInAsync(user, vm.IsRemember);
+            return Ok($"{user.FirstName} {user.LastName} welcome");
+        }
+        public async Task<IActionResult>  LogOut()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction(nameof(Login));
         }
     }
 }
