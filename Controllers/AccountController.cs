@@ -5,7 +5,7 @@ using MVCProniaTask.ViewModels.UserViewModels;
 
 namespace MVCProniaTask.Controllers
 {
-    public class AccountController(UserManager<AppUser> _userManager, SignInManager<AppUser> _signInManager, RoleManager<IdentityRole> _roleManager) : Controller
+    public class AccountController(UserManager<AppUser> _userManager, SignInManager<AppUser> _signInManager, RoleManager<IdentityRole> _roleManager, IConfiguration _configuration) : Controller
     {
         public IActionResult Register()
         {
@@ -104,7 +104,7 @@ namespace MVCProniaTask.Controllers
 
         public async Task<IActionResult> CreateAdminAndModerator()
         {
-            AppUser adminUser = new()
+            /*AppUser adminUser = new()
             {
                 UserName = "admin",
                 Email = "admin@gmail.com",
@@ -118,13 +118,37 @@ namespace MVCProniaTask.Controllers
                 Email = "moderator@gmail.com",
                 FirstName = "Moderator",
                 LastName = "System"
-            };
+            };*/
+            var adminUserVm = _configuration.GetSection("AdminUser").Get<UserVM>();
+            var moderatorUserVm = _configuration.GetSection("ModeratorUser").Get<UserVM>();
 
-            await _userManager.CreateAsync(adminUser, "Admin123!");
-            await _userManager.CreateAsync(moderatorUser, "Moderator123!");
+            if(adminUserVm is not null)
+            {
+                AppUser adminUser = new()
+                {
+                    FirstName = adminUserVm.FirstName,
+                    Email = adminUserVm.Email,
+                    UserName = adminUserVm.UserName
+                };
+                await _userManager.CreateAsync(adminUser, adminUserVm.Password);
+                await _userManager.AddToRoleAsync(adminUser, "Admin");
+            }
+            
+            if(moderatorUserVm is not null)
+            {
+                AppUser moderatorUser = new()
+                {
+                    FirstName = moderatorUserVm.FirstName,
+                    Email = moderatorUserVm.Email,
+                    UserName = moderatorUserVm.UserName
+                };
+                await _userManager.CreateAsync(moderatorUser, moderatorUserVm.Password);
+                await _userManager.AddToRoleAsync(moderatorUser, "Moderator");
+            }
+           
 
-            await _userManager.AddToRoleAsync(adminUser, "Admin");
-            await _userManager.AddToRoleAsync(moderatorUser, "Moderator");
+            
+            
 
             return Ok("Successfully");
         }
