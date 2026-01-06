@@ -5,7 +5,7 @@ using MVCProniaTask.ViewModels.UserViewModels;
 
 namespace MVCProniaTask.Controllers
 {
-    public class AccountController(UserManager<AppUser> _userManager, SignInManager<AppUser> _signInManager) : Controller
+    public class AccountController(UserManager<AppUser> _userManager, SignInManager<AppUser> _signInManager, RoleManager<IdentityRole> _roleManager) : Controller
     {
         public IActionResult Register()
         {
@@ -46,7 +46,10 @@ namespace MVCProniaTask.Controllers
                 }
                 return View(vm);
             }
-            return Ok("OK");
+            await _userManager.AddToRoleAsync(user, "Member");
+
+            await _signInManager.SignInAsync(user, false);
+            return RedirectToAction("Index", "Home");
         }
 
         public IActionResult Login()
@@ -61,7 +64,7 @@ namespace MVCProniaTask.Controllers
                 return View(vm);
             }
             var user = await _userManager.FindByEmailAsync(vm.EmailAddress);
-            if(user is { })
+            if(user is null)
             {
                 ModelState.AddModelError("", "Email or Password is wrong");
                 return View(vm);
@@ -74,12 +77,57 @@ namespace MVCProniaTask.Controllers
             }
 
             await _signInManager.SignInAsync(user, vm.IsRemember);
-            return Ok($"{user.FirstName} {user.LastName} welcome");
+            return RedirectToAction("Index", "Home");
         }
         public async Task<IActionResult>  LogOut()
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction(nameof(Login));
         }
+
+        public async Task<IActionResult>  CreateRoles()
+        {
+            await _roleManager.CreateAsync(new IdentityRole()
+            {
+                Name = "Admin"
+            });
+            await _roleManager.CreateAsync(new IdentityRole()
+            {
+                Name = "Member"
+            });
+            await _roleManager.CreateAsync(new IdentityRole()
+            {
+                Name = "Moderator"
+            });
+            return Ok("Roles created");
+        }
+
+        public async Task<IActionResult> CreateAdminAndModerator()
+        {
+            AppUser adminUser = new()
+            {
+                UserName = "admin",
+                Email = "admin@gmail.com",
+                FirstName = "Admin",
+                LastName = "System"
+            };
+
+            AppUser moderatorUser = new()
+            {
+                UserName = "moderator",
+                Email = "moderator@gmail.com",
+                FirstName = "Moderator",
+                LastName = "System"
+            };
+
+            await _userManager.CreateAsync(adminUser, "Admin123!");
+            await _userManager.CreateAsync(moderatorUser, "Moderator123!");
+
+            await _userManager.AddToRoleAsync(adminUser, "Admin");
+            await _userManager.AddToRoleAsync(moderatorUser, "Moderator");
+
+            return Ok("Successfully");
+        }
+
     }
 }

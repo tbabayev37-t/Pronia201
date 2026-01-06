@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MVCProniaTask.Contexts;
 
 namespace MVCProniaTask.Controllers
 {
     public class ShopController(AppDbContext _contex) : Controller
     {
+        [Authorize]
         public IActionResult Index()
         {
 
