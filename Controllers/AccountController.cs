@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using MVCProniaTask.Abstractions;
 using MVCProniaTask.Contexts;
 using MVCProniaTask.ViewModels.UserViewModels;
 
 namespace MVCProniaTask.Controllers
 {
-    public class AccountController(UserManager<AppUser> _userManager, SignInManager<AppUser> _signInManager, RoleManager<IdentityRole> _roleManager, IConfiguration _configuration) : Controller
+    public class AccountController(UserManager<AppUser> _userManager, SignInManager<AppUser> _signInManager, RoleManager<IdentityRole> _roleManager, IConfiguration _configuration, IEmailService _emailService) : Controller
     {
         public IActionResult Register()
         {
@@ -48,8 +49,11 @@ namespace MVCProniaTask.Controllers
             }
             await _userManager.AddToRoleAsync(user, "Member");
 
-            await _signInManager.SignInAsync(user, false);
-            return RedirectToAction("Index", "Home");
+           
+
+            await SendConfirmEmailAsync(user);
+            TempData["SuccessMessage"] = "Please confirm your email";
+            return RedirectToAction("Login");
         }
 
         public IActionResult Login()
@@ -73,6 +77,12 @@ namespace MVCProniaTask.Controllers
             if(result == false)
             {
                 ModelState.AddModelError("", "Email or Password is wrong");
+                return View(vm);
+            }
+            if (!user.EmailConfirmed)
+            {
+                ModelState.AddModelError("", "Please confirm your email address");
+                await SendConfirmEmailAsync(user);
                 return View(vm);
             }
 
@@ -145,12 +155,31 @@ namespace MVCProniaTask.Controllers
                 await _userManager.CreateAsync(moderatorUser, moderatorUserVm.Password);
                 await _userManager.AddToRoleAsync(moderatorUser, "Moderator");
             }
-           
 
-            
-            
 
             return Ok("Successfully");
+        }
+        public async Task SendConfirmEmailAsync(AppUser user)
+        {
+           var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+            // await _userManager.ConfirmEmailAsync(user, token);
+   
+            string url = Url.Action("ConfirmEmail","Account",new { token, userId = user.Id}, Request.Scheme)?? string.Empty;
+            await _emailService.SendEmailAsync(user.Email, "Confirm your email", url);
+        }
+        public async Task<IActionResult> ConfirmEmail(string token, string userId)
+        {
+           var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+                return BadRequest();
+         var result = await _userManager.ConfirmEmailAsync(user, token);
+
+            if (!result.Succeeded)
+                return BadRequest();
+
+            await _signInManager.SignInAsync(user, false);
+
+            return RedirectToAction("Index", "Home");
         }
 
     }
