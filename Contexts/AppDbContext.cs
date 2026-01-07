@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.General;
+using System.Reflection;
 
 
 namespace MVCProniaTask.Contexts
@@ -11,6 +13,12 @@ namespace MVCProniaTask.Contexts
         {
             
         }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            base.OnModelCreating(builder);
+        }
+
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<Shipping> Shippings { get; set; }
         public DbSet<Product> Products { get; set; }
