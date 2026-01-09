@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.General;
+using MVCProniaTask.Models.Basket;
 using System.Reflection;
 
 
@@ -27,5 +28,6 @@ namespace MVCProniaTask.Contexts
         public DbSet<Tag> Tags { get; set; }
         public DbSet<ProductTag> ProductTags { get; set; }
         public DbSet<Brand> Brands { get; set; }
+        public DbSet<BasketItem> BasketItems { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MVCProniaTask.Models.Basket;
 using System.ComponentModel.DataAnnotations;
 
 namespace MVCProniaTask.Models
@@ -23,6 +24,7 @@ namespace MVCProniaTask.Models
         public double Rating { get; set; }
         public ICollection<ProductTag> ProductTags { get; set; } = [];
         public ICollection<ProductImage> ProductImages { get; set; } = [];
+        public ICollection<BasketItem> BasketItems { get; set; } = [];
         public int? BrandId { get; set; }
         public Brand Brand { get; set; }
     }
