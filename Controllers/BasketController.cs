@@ -81,6 +81,39 @@ public class BasketController(AppDbContext _context, IBasketService _basketServi
         }
         return RedirectToAction("Index", "Shop");
     }
+    public async Task<IActionResult>IncreaseBasketItemCount(int productId)
+    {
+        var isExistProduct = await _context.Products.AnyAsync(x => x.Id == productId);
+
+        if (!isExistProduct)
+        {
+            return NotFound();
+        }
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+        var isExistUser = await _context.Users.AnyAsync(x => x.Id == userId);
+        if (!isExistUser)
+            return BadRequest();
+
+        var existbasketItem = await _context.BasketItems.FirstOrDefaultAsync(x => x.AppUserId == userId && x.ProductId == productId);
+        if (existbasketItem is null)
+        {
+            return NotFound();
+        }
+        
+            existbasketItem.Count++;
+
+        _context.BasketItems.Update(existbasketItem);
+        await _context.SaveChangesAsync();
+        /*var returnUrl = Request.Headers["Referer"];
+        if (!string.IsNullOrWhiteSpace(returnUrl))
+        {
+            return Redirect(returnUrl!);
+        }
+        return RedirectToAction("Index", "Shop");*/
+        var basketItems = await _basketService.GetBasketItemsAsync();
+        return PartialView("BasketPartialView", basketItems);
+    }
     public async Task<IActionResult>  DecreaseBasketItemCount(int productId)
     {
         var isExistProduct = await _context.Products.AnyAsync(x => x.Id == productId);
@@ -105,11 +138,13 @@ public class BasketController(AppDbContext _context, IBasketService _basketServi
 
         _context.BasketItems.Update(existbasketItem);
         await _context.SaveChangesAsync();
-        var returnUrl = Request.Headers["Referer"];
+        /*var returnUrl = Request.Headers["Referer"];
         if (!string.IsNullOrWhiteSpace(returnUrl))
         {
             return Redirect(returnUrl!);
         }
-        return RedirectToAction("Index", "Shop");
+        return RedirectToAction("Index", "Shop");*/
+        var basketItems = await _basketService.GetBasketItemsAsync();
+        return PartialView("BasketPartialView", basketItems);
     }
 }
